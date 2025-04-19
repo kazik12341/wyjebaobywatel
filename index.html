@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mObywatel - Dane użytkownika</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>mObywatel</h1>
+    </header>
+    <main>
+      <div class="card">
+        <h2>Dane osobowe</h2>
+        <div class="info-group">
+          <label>Imię:</label>
+          <span id="firstName">Jan</span>
+        </div>
+        <div class="info-group">
+          <label>Nazwisko:</label>
+          <span id="lastName">Kowalski</span>
+        </div>
+        <div class="info-group">
+          <label>PESEL:</label>
+          <span id="pesel">85010112345</span>
+        </div>
+        <div class="info-group">
+          <label>Numer dowodu:</label>
+          <span id="idNumber">ABA123456</span>
+        </div>
+        <button id="editBtn">Edytuj dane</button>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal hidden" id="editModal">
+    <div class="modal-content">
+      <h2>Edytuj dane</h2>
+      <label>Imię: <input type="text" id="editFirstName"></label>
+      <label>Nazwisko: <input type="text" id="editLastName"></label>
+      <label>PESEL: <input type="text" id="editPesel"></label>
+      <label>Numer dowodu: <input type="text" id="editIdNumber"></label>
+      <button id="saveBtn">Zapisz</button>
+      <button id="cancelBtn">Anuluj</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
